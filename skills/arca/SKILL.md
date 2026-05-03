@@ -4,6 +4,10 @@ description: Economía argentina en tiempo real. Dólar (oficial, blue, MEP, CCL
 
 # Skill: /arca
 
+## Fecha actual
+
+Antes de cualquier WebSearch que incluya año o mes, confirmá la fecha del sistema (`Bash: date` o contexto `currentDate`). Nunca asumas ni hardcodees el año — usá siempre el que reporta el sistema.
+
 Consultá la economía argentina al instante. Hacé fetch a las APIs indicadas, procesá los datos y presentalos de forma clara.
 
 ## Comandos
