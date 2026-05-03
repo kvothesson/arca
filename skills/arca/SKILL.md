@@ -67,15 +67,17 @@ Tarjeta     u$s XXX
 
 Al final agregá: "Canasta básica total: ~$XXX.XXX (INDEC [mes])" para dar contexto de poder adquisitivo.
 
-Fetch canasta: `https://apis.datos.gob.ar/series/api/series/?ids=145.3_CBASICATOTAL_0_M_26&limit=1&format=json`
+Fetch canasta: `https://apis.datos.gob.ar/series/api/series/?ids=444.1_CANASTA_batotPampeana_0_0_26_47&limit=1&sort=desc&format=json`
 
 ---
 
 ### `/arca canasta`
 Valor actual de la canasta básica total e indigencia.
 
-Fetch canasta total: `https://apis.datos.gob.ar/series/api/series/?ids=145.3_CBASICATOTAL_0_M_26&limit=3&format=json`
-Fetch canasta indigencia: `https://apis.datos.gob.ar/series/api/series/?ids=145.3_CBAINDTOTAL_0_M_26&limit=3&format=json`
+Fetch canasta total: `https://apis.datos.gob.ar/series/api/series/?ids=444.1_CANASTA_batotPampeana_0_0_26_47&limit=3&sort=desc&format=json`
+Fetch canasta indigencia: `https://apis.datos.gob.ar/series/api/series/?ids=444.1_CANASTA_baindPampeana_0_0_26_47&limit=3&sort=desc&format=json`
+
+Nota: el INDEC publica la canasta por región, no hay serie nacional unificada. Región Pampeana es la referencia estándar (cubre AMBA y provincia de Buenos Aires). Aclarar esto en la respuesta.
 
 Presentá:
 ```
