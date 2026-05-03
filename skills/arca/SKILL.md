@@ -34,7 +34,7 @@ Después de la tabla, una línea: brecha blue vs oficial en %.
 ### `/arca inflacion`
 Último dato de inflación del INDEC.
 
-Fetch: `https://apis.datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&limit=13&format=json`
+Fetch: `https://apis.datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&limit=13&sort=desc&format=json`
 
 Presentá así:
 ```
