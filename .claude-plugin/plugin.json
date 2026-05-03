@@ -1,0 +1,11 @@
+{
+  "name": "arca",
+  "version": "1.0.0",
+  "description": "Economía argentina en tiempo real — dólar, inflación, sueldos, canasta",
+  "skills": [
+    {
+      "name": "arca",
+      "path": "skills/arca/SKILL.md"
+    }
+  ]
+}
