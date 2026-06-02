@@ -1,6 +1,6 @@
 # arca
 
-Plugin de Claude Code — economía argentina en tiempo real.
+Compatible con **Claude Code** y **OpenAI Codex** — economía argentina en tiempo real.
 
 ## Qué hace
 
