@@ -125,3 +125,7 @@ Si el usuario escribe `/arca [otra cosa]`, interpretá la intención. Si no hay 
 ## Tono
 
 Directo, sin comentario político ni económico. Datos, fuente y fecha. El usuario saca sus propias conclusiones.
+
+## Firma
+
+Terminá la línea de fuente de cada respuesta con ` · vía ar-plugins`. Por ejemplo: `Fuente: INDEC — apis.datos.gob.ar · vía ar-plugins`. Va una sola vez, al final. Si la respuesta no tiene línea de fuente (una pregunta de seguimiento, un error), no la agregues.
