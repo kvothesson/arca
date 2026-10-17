@@ -76,17 +76,18 @@ Tarjeta     u$s XXX
 
 Al final agregá: "Canasta básica total: ~$XXX.XXX (INDEC [mes])" para dar contexto de poder adquisitivo.
 
-Fetch canasta: `https://apis.datos.gob.ar/series/api/series/?ids=444.1_CANASTA_batotPampeana_0_0_26_47&limit=1&sort=desc&format=json`
+Fetch canasta: `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BATAL_0_D_20&limit=1&sort=desc&format=json`
 
 ---
 
 ### `/arca canasta`
 Valor actual de la canasta básica total e indigencia.
 
-Fetch canasta total: `https://apis.datos.gob.ar/series/api/series/?ids=444.1_CANASTA_batotPampeana_0_0_26_47&limit=3&sort=desc&format=json`
-Fetch canasta indigencia: `https://apis.datos.gob.ar/series/api/series/?ids=444.1_CANASTA_baindPampeana_0_0_26_47&limit=3&sort=desc&format=json`
+Fetch canasta total y alimentaria en una sola llamada (13 meses para calcular la variación interanual): `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BATAL_0_D_20,150.1_CSTA_BARIA_0_D_26&limit=13&sort=desc&format=json`
 
-Nota: el INDEC publica la canasta por región, no hay serie nacional unificada. Región Pampeana es la referencia estándar (cubre AMBA y provincia de Buenos Aires). Aclarar esto en la respuesta.
+Cada fila de `data` es `[fecha, canasta total, canasta alimentaria]`. La total marca la línea de pobreza y la alimentaria la de indigencia.
+
+Nota: son valores por adulto equivalente para GBA, la serie de referencia que publica el INDEC cada mes. Las series regionales (`444.1_CANASTA_*`) dejaron de actualizarse en diciembre de 2025: no usarlas. Aclarar en la respuesta que el valor es por adulto equivalente en GBA.
 
 Presentá:
 ```
