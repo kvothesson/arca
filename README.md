@@ -60,7 +60,7 @@ CCL         u$s 535
 Oficial     u$s 565
 Tarjeta     u$s 434
 
-Canasta básica total (región Pampeana, dic 2025): $417.680
+Canasta básica total (adulto equivalente GBA, ago 2026): $519.578
 ```
 
 ---
@@ -68,14 +68,14 @@ Canasta básica total (región Pampeana, dic 2025): $417.680
 ### `/arca canasta`
 
 ```
-🛒 Canasta Básica — dic 2025
-     (región Pampeana — referencia AMBA)
+🛒 Canasta Básica — ago 2026
+     (adulto equivalente, GBA)
 
-No pobreza:    $417.680
-No indigencia: $xxx.xxx
+No pobreza:    $519.578
+No indigencia: $235.103
 
-Variación vs mes anterior:  +3,8%
-Variación vs año anterior:  +xx,x%
+Variación vs mes anterior:  +2,6%
+Variación vs año anterior:  +38,3%
 
 Fuente: INDEC. Dato más reciente disponible.
 ```
