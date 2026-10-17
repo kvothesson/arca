@@ -71,16 +71,17 @@ Tarjeta     u$s XXX
 
 Al final agregá: "Canasta básica total: ~$XXX.XXX (INDEC [mes])" para dar contexto de poder adquisitivo.
 
-Fetch canasta: `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BATAL_0_D_20&limit=1&sort=desc&format=json`
+Fetch canasta: `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BATAL_0_D_20&limit=3&sort=desc&format=json` (usá la primera fila con valor; la serie tiene meses en `null`)
 
 ---
 
 ### `/arca canasta`
 Valor actual de la canasta básica total e indigencia.
 
-Fetch canasta total y alimentaria en una sola llamada (13 meses para calcular la variación interanual): `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BATAL_0_D_20,150.1_CSTA_BARIA_0_D_26&limit=13&sort=desc&format=json`
+Fetch canasta total (línea de pobreza): `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BATAL_0_D_20&limit=14&sort=desc&format=json`
+Fetch canasta alimentaria (línea de indigencia): `https://apis.datos.gob.ar/series/api/series/?ids=150.1_CSTA_BARIA_0_D_26&limit=14&sort=desc&format=json`
 
-Cada fila de `data` es `[fecha, canasta total, canasta alimentaria]`. La total marca la línea de pobreza y la alimentaria la de indigencia.
+Hacé las dos consultas por separado: combinadas en un solo `ids=` la API a veces devuelve la segunda columna vacía. Cada fila de `data` es `[fecha, valor]` y algunos meses vienen en `null`: salteálos, tomá el último mes con valor y compará contra el mes anterior con valor y contra el mismo mes del año anterior.
 
 Nota: son valores por adulto equivalente para GBA, la serie de referencia que publica el INDEC cada mes. Las series regionales (`444.1_CANASTA_*`) dejaron de actualizarse en diciembre de 2025: no usarlas. Aclarar en la respuesta que el valor es por adulto equivalente en GBA.
 
