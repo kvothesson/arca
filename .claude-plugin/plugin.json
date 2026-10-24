@@ -1,11 +1,12 @@
 {
   "name": "arca",
-  "version": "1.2.3",
-  "description": "Economía argentina en tiempo real — dólar, inflación, sueldos, canasta",
-  "skills": [
-    {
-      "name": "arca",
-      "path": "skills/arca/SKILL.md"
-    }
-  ]
+  "version": "1.2.4",
+  "description": "Dólar oficial, blue, MEP y CCL, inflación del INDEC y canasta básica de Argentina, al día y con la fuente de cada dato.",
+  "author": {
+    "name": "Kvothesson",
+    "url": "https://github.com/kvothesson"
+  },
+  "homepage": "https://github.com/kvothesson/arca",
+  "repository": "https://github.com/kvothesson/arca",
+  "license": "MIT"
 }
